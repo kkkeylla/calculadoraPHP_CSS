@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1 class = "titulo"> Calculadora Simples </h1>
-        <form method="GET" action="/calc-main/">
+        <form method="GET" action="/calculadoraphp_css/">
             <div class="calculo">
         <label for="num1">Num1:</label><br>
             <input type="number" name="n1"><br>
@@ -20,6 +20,7 @@
                 <input type="radio" name="op" value="subtração">Subtração</input>
                 <input type="radio" name="op" value="divisão">Divisão</input>
                 <input type="radio" name="op" value="multiplicacao">Multiplicação</input>
+                <input type="radio" name="op" value="resto">resto</input>
             </fieldset>
         </form>
         <?php
@@ -46,6 +47,12 @@
                         return $GLOBALS['n1'] - $GLOBALS['n2'];
                     }
 
+                    function resto(){
+                        return $GLOBALS['n1'] % $GLOBALS['n2'];
+                    }
+
+
+
        
                     switch ($_GET['op']) {
                         case (($_GET['op']) == 'soma'):
@@ -60,7 +67,9 @@
                         case (($_GET['op']) == "multiplicacao"):
                             echo "<h1 class= resultado > $n1 x $n2 =" .multiplicacao(). "</h1>";
                             break;
-
+                        case (($_GET['op']) == "resto"):
+                            echo "<h1 class= resultado > $n1 % $n2 =" .resto(). "</h1>";
+                            break;
                             
                         }
                     }
