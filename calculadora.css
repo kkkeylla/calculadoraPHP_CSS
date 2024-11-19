@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+}
+
+form {
+    background-color: red;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px 5px rgb(255, 17, 17);
+}
+
+.calculo {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+
+fieldset {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    width: 150px;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+
+}
+
+input {
+    border-radius: 5px;
+    height: 25px;
+    margin: 2px;
+    
+}
+
+.botao {
+    background-color: black;
+    color: aliceblue;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    
+}
+
+.titulo {
+    
+    position: absolute;
+    left: 33%;
+    font-size: 50px;
+}
+
+.resultado {
+    position: absolute;
+    top:70%;
+    left: 630px;
+}
